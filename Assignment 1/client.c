@@ -57,6 +57,14 @@ for(int i=0;i<19;i++)
      case 2:
      fptr1 = fopen("bubble_time.txt","w+");
      fptr2 = fopen("bubble_comp.txt","w+");
+      if (fptr1 == NULL) 
+    { 
+        printf("Could not open file1"); 
+    } 
+    if (fptr2 == NULL) 
+    { 
+        printf("Could not open file2"); 
+    } 
      for(int i=0;i<19;i++)
      {
      start = clock();
@@ -76,6 +84,14 @@ for(int i=0;i<19;i++)
      case 3:
      fptr1 = fopen("quick_time.txt","w+");
      fptr2 = fopen("quick_comp.txt","w+");
+      if (fptr1 == NULL) 
+    { 
+        printf("Could not open file1"); 
+    } 
+    if (fptr2 == NULL) 
+    { 
+        printf("Could not open file2"); 
+    } 
      for(int i=0;i<19;i++)
      {
      start = clock();
@@ -95,6 +111,14 @@ for(int i=0;i<19;i++)
      case 4:
      fptr1 = fopen("merge_time.txt","w+");
      fptr2 = fopen("merge_comp.txt","w+");
+      if (fptr1 == NULL) 
+    { 
+        printf("Could not open file1"); 
+    } 
+    if (fptr2 == NULL) 
+    { 
+        printf("Could not open file2"); 
+    } 
      for(int i=0;i<19;i++)
      {
      start = clock();
