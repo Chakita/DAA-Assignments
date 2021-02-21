@@ -59,17 +59,22 @@ long int sel_sort(int size,int a[])
      int j=high;int temp;
      while(i<=j)
      { 
-        (*c)++;
+       if(i>high && a[i]>pivot)
+       	(*c)++;
+       if(j<low && a[j]<pivot)
+       	(*c)++;
         while(i<=high && a[i]<=pivot) 
         {
         
          i++;
+         (*c)++;
          
          }
-         (*c)++;
+
         while(j>low && a[j]>=pivot)
         {
         j--;
+        (*c)++;
         }
         if(i<j)
         {
